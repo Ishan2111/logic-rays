@@ -42,10 +42,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function Company()
-    {
-        dd(2);
-        return $this->belongsTo(Company::class, 'company_id', 'id');
-    }
 }
